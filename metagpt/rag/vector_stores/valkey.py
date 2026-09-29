@@ -96,6 +96,7 @@ class ValkeyVectorStore(BasePydanticVectorStore):
         config_kwargs = {
             "addresses": addresses,
             "client_name": self.client_name,
+            "client_info_tag": "metagpt",
             "use_tls": self.use_tls,
             "request_timeout": self.request_timeout,
         }
